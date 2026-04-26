@@ -46,7 +46,7 @@ uvicorn main:app --reload
 ```
 Сервер будет доступен по адресу: http://127.0.0.1:8000
 
-#GET / — Проверка работоспособности
+# Проверка работоспособности
 ```
 curl http://127.0.0.1:8000
 ```
@@ -58,14 +58,11 @@ curl http://127.0.0.1:8000
 }
 ```
 
-#GET /parse — Парсинг страницы
+# Парсинг страницы
 Примеры запросов:
 ```
 # Через curl
 curl "http://127.0.0.1:8000/parse?url=https://example.com"
-
-# С кодированием специального символа
-curl "http://127.0.0.1:8000/parse?url=https%3A%2F%2Fexample.com%2Fpage"
 ```
 Успешный ответ (JSON)
 ```
@@ -80,7 +77,7 @@ curl "http://127.0.0.1:8000/parse?url=https%3A%2F%2Fexample.com%2Fpage"
 }
 ```
 
- #Получение всех записей из БД
+ # Получение всех записей из БД
  ```
 {
   "count": 3,
@@ -129,8 +126,7 @@ curl "http://127.0.0.1:8000/parse?url=https%3A%2F%2Fexample.com%2Fpage"
 }
 ```
 
-
-#Структура базы данных
+# Структура базы данных
 ```
 CREATE TABLE parsed_pages (
     id SERIAL PRIMARY KEY,
