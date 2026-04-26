@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 
 # 2. Настройка базы данных PostgreSQL
-# Создайте базу данных (через терминал)
+# Cоздайте базу данных (через терминал)
 ```
 createdb -h localhost -U ваш_пользователь parser_db
 ```
