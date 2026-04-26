@@ -39,7 +39,7 @@ psql -h localhost -U ваш_пользователь
 DATABASE_URL=postgresql://ваш_пользователь:ваш_пароль@localhost:5432/parser_db
 ```
 
-#Запуск проекта
+Запуск проекта
 ```
 # Запуск сервера с авто-перезагрузкой при изменении кода
 uvicorn main:app --reload
