@@ -78,27 +78,7 @@ curl "http://127.0.0.1:8000/parse?url=https://example.com"
 
  # Получение всех записей из БД
  ```
-{
-  "count": 3,
-  "results": [
-    {
-      "id": 1,
-      "url": "https://example.com",
-      "title": "Example Domain",
-      "description": "Example Domain. This domain...",
-      "content_length": 1256,
-      "parsed_at": "2026-04-23T15:30:45.123456"
-    },
-    {
-      "id": 2,
-      "url": "https://httpbin.org/html",
-      "title": "No title",
-      "description": "",
-      "content_length": 3741,
-      "parsed_at": "2026-04-23T15:32:10.654321"
-    }
-  ]
-}
+curl http://127.0.0.1:8000/data
 ```
 Ответ (JSON)
 ```
